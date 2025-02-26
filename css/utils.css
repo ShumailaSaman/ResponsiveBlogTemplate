@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --main-bg-color: #bd6418;
+  --font1: "Baloo Bhaina 2", cursive;
+  --font2: "Roboto", sans-serif;
+}
+.font1 {
+  font-family: var(--font1);
+}
+.font2 {
+  font-family: var(--font2);
+}
+.max-width-1 {
+  max-width: 80vw;
+}
+.max-width-1 hr {
+  margin: 10px 0; /* Adds 20px space on top and bottom */
+  border: none; /* Removes default border */
+  height: 1px; /* Adjust thickness */
+  background-color: black; /* Adjust color */
+}
+.center {
+  text-align: center;
+}
+.max-width-2 {
+  max-width: 60vw;
+}
+.m-auto {
+  margin: auto;
+}
+.my-2 {
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.mx-1 {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+.btn {
+}
+.form-control {
+}
+.form-input {
+  padding: 0px 5px;
+  padding-top: 3px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 0 13px;
+  font-family: var(--font1);
+}
+.form-box input,
+.form-box textarea {
+  width: 52vw;
+  max-width: 70%;
+  display: block;
+  padding: 12px 6px;
+  margin: 16px; /* centers the element */
+  font-size: 16px;
+  border: 2px solid var(--main-bg-color);
+  border-radius: 8px;
+  font-family: var(--font1);
+}

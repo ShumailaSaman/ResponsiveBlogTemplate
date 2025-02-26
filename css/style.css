@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(232, 231, 233); */
+}
+.navigation {
+  margin-top: 25px;
+  font-family: var(--font1);
+  /* height: 74px; */
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+}
+.nav-left span {
+  font-size: 35px;
+  padding-top: 10px;
+}
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 23px;
+  padding-top: 23px;
+}
+
+.nav-left ul li {
+  font-size: 20px;
+  list-style: none;
+  margin: 0 14px;
+
+  font-family: var(--font2);
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.nav-left ul li:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+
+/* Ensure the anchor inside li inherits the color change */
+.nav-left ul li:hover a {
+  color: inherit;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  margin-bottom: 40px;
+  /* background-color: rgb(208, 208, 243); */
+  margin-top: 32px;
+  padding: 9px;
+  position: relative;
+  /* overflow: hidden; Ensures pseudo-element doesn't spill out */
+}
+
+.content::after {
+  content: "";
+  background-image: url("../img/tablet-1910018_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  opacity: 0.2; /* Increased opacity */
+}
+
+.content-left {
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 49px;
+  z-index: 1;
+}
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-right img {
+  height: 200px; /* Adjusted to a smaller size */
+  width: 200px; /* Ensuring width equals height */
+  border: 2px solid rgb(61, 60, 60);
+  border-radius: 50%; /* 50% creates a circle if width and height are equal */
+}
+.max-width-1 hr {
+  border: none;
+  height: 2px;
+  background-color: #333;
+  margin: 20px 0;
+}
+
+.home-articles {
+  background-color: rgba(238, 227, 227, 0.5);
+  /* padding-top: 12px; */
+  margin-top: 30px !important;
+  padding: 18px;
+  border-radius: 12px;
+  position: relative;
+}
+.year-box {
+  position: absolute;
+  width: 234px;
+  height: 255px;
+  /* background-color: red; */
+  right: -150px;
+  top: 100px;
+}
+.year-box div {
+  margin: 12px 0px;
+  font-size: 18px;
+}
+.home-article {
+  display: flex;
+  margin: 25px;
+}
+.home-article-content {
+  align-self: center;
+  padding: 25px;
+}
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+.home-article-img img {
+  width: 300px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures images are cropped to fit */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+/* .home-articles{} */
+.footer {
+  height: 40px;
+  /* margin-top: 20px; */
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+.footer a {
+  color: rgb(23, 5, 5);
+}
+.btn {
+  padding: 0px 14px;
+  padding-top: 3px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-family: var(--font1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background: var(--main-bg-color);
+  color: white;
+}
+.form-input {
+  padding: 0px 5px;
+  padding-top: 3px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 0 13px;
+  font-family: var(--font1);
+}

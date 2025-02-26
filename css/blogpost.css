@@ -1,0 +1,77 @@
+.max-width-1 {
+  margin: 0 auto; /* Ensures no extra space */
+}
+
+.max-width-1 hr {
+  margin: 0; /* Removes default margin from hr */
+  padding: 0;
+  border: none; /* Remove extra styling if needed */
+  height: 1px;
+  background-color: black; /* Adjust if necessary */
+}
+
+.post-img {
+  margin: 0;
+  padding: 0;
+  height: 404px;
+  overflow: hidden;
+}
+
+.post-img img {
+  display: block; /* Prevents inline spacing issues */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-post-content {
+  /* background-color: rgb(173, 39, 168); */
+}
+.blog-post-content h1 {
+  text-align: center;
+}
+.blog-post-content p {
+  font-size: 18px;
+}
+.row {
+  display: flex;
+}
+.more-post {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blogpost-meta {
+  display: flex;
+  align-items: center; /* vertically centers items */
+  justify-content: space-between; /* pushes items to edges, adjust as needed */
+}
+.author-info div {
+  padding: 4px 0px;
+  font-family: var(--font2);
+}
+.author-info {
+  margin-right: 1rem; /* Optional spacing */
+}
+.social {
+  display: flex;
+  gap: 8px; /* space between icons */
+  align-items: center;
+  padding: 53px;
+}
+
+.social svg {
+  width: 24px; /* Set a fixed width */
+  height: 24px; /* Set a fixed height */
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social svg:hover {
+  transform: scale(1.1);
+}
+.svgIcon-use {
+  width: 42px;
+  height: 42px;
+}
